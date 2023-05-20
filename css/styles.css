@@ -1,0 +1,357 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--slate-color);
+    background-color: var(--white-color);
+}
+
+.link {text-decoration: none;}
+
+.list {list-style: none;}
+
+:root {
+    --white-color: #FFFFFF;;
+    --slate-color: #434455;
+    --cloud-color: #F4F4FD;
+    --iris-color: #4D5AE5; 
+    --navy-blue-color: #2E2F42; 
+    --back-color-main: #E5E5E5; 
+    --ocean-color: #404BBF; 
+    
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6  {
+    margin: 0;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {display: block;
+
+  }
+
+  .container {
+            width: 1128px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin: 0 auto;
+  }
+
+
+/* --------------------------- HEADER --------------------------- */
+
+.header {
+background-color: var(--white-color);
+padding-top: 25.5px;
+padding-bottom: 25.5px;
+}
+
+.logo-header { font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    /* display: flex; */
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris-color)
+
+}
+
+
+.logo-header-web:active {text-decoration: underline;
+
+}
+
+.logo-header-studio {color: var(--navy-blue-color);
+
+}
+
+
+.logo-header:active {text-decoration: underline;}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-color);
+}
+
+.header-link:focus { color: var(--ocean-color);
+}
+
+.header-link:hover {color: var(--ocean-color);
+
+}
+
+.header-address {
+    font-style: normal;
+}
+
+.header-address-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}   
+
+.header-address-link:focus {color: var(--ocean-color);
+
+}
+
+.header-address-link:hover {color: var(--ocean-color);    
+}
+
+
+
+/* --------------------------- HERO --------------------------- */
+
+.hero {background-color: var(--navy-blue-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.title-hero {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 48px;
+}
+
+.hero-button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+    cursor: pointer;
+}
+
+.hero-button:hover {background-color: var(--ocean-color);
+
+}
+
+.hero-button:focus {background-color: var(--ocean-color);
+
+}
+
+/* --------------------------- ABOUT --------------------------- */
+
+.about { padding-top: 120px;
+        padding-bottom: 60px;
+}
+
+.about-title {
+    
+}
+
+.about-item {
+            border: 1px solid black;
+}
+
+.about-top-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-color);
+    margin-bottom: 8px;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+   }
+
+/* --------------------------- What are we doing --------------------------- */
+
+.what-we-do {padding-bottom: 120px;
+            padding-top: 60px;
+}
+
+.what-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+    margin-bottom: 72px;
+}
+
+/* --------------------------- OUR TEAM --------------------------- */
+
+.our-team {
+    background-color: var(--cloud-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-our-team {
+    background-color: var(--white-color);
+    border: 1px solid black;
+}
+
+.title-our-team {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+    margin-bottom: 72px;
+}
+
+.img-our-team {
+    margin-bottom: 32px;
+}
+
+.item-name {font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-color);
+    margin-bottom: 8px;
+}
+
+.item-profession {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+}
+
+/* --------------------------- PORTFOLIO --------------------------- */
+
+.portfolio-btn {
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
+}
+
+.portfolio-btn:hover {color: var(--white-color);
+     background-color: var(--ocean-color);
+
+}
+
+.portfolio-btn:focus {color: var(--white-color);
+    background-color: var(--ocean-color);
+}
+
+.buttons-list {padding-top: 96px;
+                padding-bottom: 72px;
+
+}
+
+.portfolio-list {
+    padding-bottom: 120px;
+    }
+
+.card-portfolio-list {border: 1px solid black;
+
+}
+
+.img-portfolio {
+            margin-bottom: 32px;
+
+}
+
+/* .portfolio {
+    background-color: var(--white-color);
+} */
+
+.portfolio-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-color);
+    margin-bottom: 8px;
+}
+
+.portfolio-filter {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    }
+
+/* --------------------------- FOOTER --------------------------- */
+.footer {
+    background-color: var(--navy-blue-color);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+    }
+
+    
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    /* font-style: normal; */
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    /* display: flex; */
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris-color);
+}
+
+.logo-footer-studio {
+    color: var(--cloud-color);
+    margin-bottom: 17.5px;
+}
+
+.text-footer {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud-color);
+
+}
