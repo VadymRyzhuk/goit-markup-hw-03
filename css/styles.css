@@ -68,16 +68,35 @@ padding-top: 25.5px;
 padding-bottom: 25.5px;
 }
 
+.header-container {
+                display: flex;
+                align-items: center;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo-padding {
+    padding-left: 156px;
+}
+
 .logo-header { font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color)
-
 }
 
 
@@ -86,7 +105,7 @@ padding-bottom: 25.5px;
 }
 
 .logo-header-studio {color: var(--navy-blue-color);
-
+                margin-right: 76px;
 }
 
 
@@ -109,6 +128,7 @@ padding-bottom: 25.5px;
 
 .header-address {
     font-style: normal;
+    margin-left: auto;
 }
 
 .header-address-link {
@@ -118,6 +138,12 @@ padding-bottom: 25.5px;
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }   
+
+.contacts-header {
+         display: flex;
+        align-items: center;
+        gap: 40px;
+}
 
 .header-address-link:focus {color: var(--ocean-color);
 
@@ -130,7 +156,12 @@ padding-bottom: 25.5px;
 
 /* --------------------------- HERO --------------------------- */
 
-.hero {background-color: var(--navy-blue-color);
+.hero {
+    
+}
+
+.hero-container {
+    background-color: var(--navy-blue-color);
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -157,6 +188,10 @@ padding-bottom: 25.5px;
     color: var(--white-color);
     background-color: var(--iris-color);
     cursor: pointer;
+    padding: 16px 32px;
+    margin: auto;
+    gap: 10px;
+    border-radius: 4px;
 }
 
 .hero-button:hover {background-color: var(--ocean-color);
@@ -173,12 +208,26 @@ padding-bottom: 25.5px;
         padding-bottom: 60px;
 }
 
+
 .about-title {
     
 }
 
+.about-list {
+    display: flex;
+    /* align-items: center; */
+    gap: 24px;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
 .about-item {
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 264px;
+            min-height: 72px;
+
 }
 
 .about-top-text {
@@ -212,6 +261,12 @@ padding-bottom: 25.5px;
     text-transform: capitalize;
     color: var(--navy-blue-color);
     margin-bottom: 72px;
+}
+
+.what-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 /* --------------------------- OUR TEAM --------------------------- */

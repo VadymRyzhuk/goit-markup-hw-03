@@ -1,126 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
+      <div class="container header-container">
         <!-- Logo -->
-        <nav>
-              <a href="./index.html" class="logo-header link">Web
-                <span class="logo-header-studio">Studio</span> 
-              </a>
-        <ul class="list">
-            <li><a href="./index.html" class="header-link link">Studio</a> </li>
-            <li><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
+        <nav class="navigation">
+            <span class="logo-padding">
+          <a href="./index.html" class="logo-header link"
+            >Web
+            <span class="logo-header-studio">Studio</span>
+          </a></span>
+          <ul class="list menu-nav">
+            <li><a href="./index.html" class="header-link link">Studio</a></li>
+            <li>
+              <a href="./portfolio.html" class="header-link link">Portfolio</a>
+            </li>
             <li><a href="" class="header-link link">Contacts</a></li>
-        </ul>
+          </ul>
         </nav>
         <address class="header-address">
-           <ul class="list">
-            <li><a href="mailto:info@devstudio.com" class="header-address-link link">info@devstudio.com</a></li>
-            <li><a href="tel:+110001111111" class="header-address-link link">+11 (000) 111-11-11</a></li>
-            </ul>
+          <ul class="list contacts-header">
+            <li>
+              <a href="mailto:info@devstudio.com" class="header-address-link link"
+                >info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="header-address-link link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
         </address>
-        </div>
+      </div>
     </header>
     <main>
-     <!-- Section 1 -->
-        <section class="hero">
-            <div class="container">
-        <h1 class="title-hero">Effective Solutions for Your Business</h1>
-    <!-- Button -->
-        <button type="button" class="hero-button">Order Service</button>
-    </div>
+
+      <!-- Section 1 -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="title-hero">Effective Solutions <br> for Your Business</h1>
+          <!-- Button -->
+          <button type="button" class="hero-button">Order Service</button>
+        </div>
       </section>
 
       <!-- Section 2 -->
       <section class="about">
         <div class="container">
-        <h2 class="about-title" hidden>Section 2</h2>
-        <ul class="list">
+          <h2 class="about-title" hidden>Section 2</h2>
+          <ul class="list about-list">
             <li class="about-item">
-                <h3 class="about-top-text">Strategy</h3>
-                <p class="about-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+              <h3 class="about-top-text">Strategy</h3>
+              <p class="about-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
             </li>
             <li class="about-item">
-                <h3 class="about-top-text">Punctuality</h3>
-                <p class="about-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+              <h3 class="about-top-text">Punctuality</h3>
+              <p class="about-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
             </li>
             <li class="about-item">
-                <h3 class="about-top-text">Diligence</h3>
-                <p class="about-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+              <h3 class="about-top-text">Diligence</h3>
+              <p class="about-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
             </li>
             <li class="about-item">
-                <h3 class="about-top-text">Technologies</h3>
-                <p class="about-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+              <h3 class="about-top-text">Technologies</h3>
+              <p class="about-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
             </li>
-        </ul>
-    </div>
+          </ul>
+        </div>
       </section>
 
       <!-- Section 3 -->
       <section class="what-we-do">
         <div class="container">
-        <h2 class="what-title">What are we doing</h2>
-        <ul class="list">
-            <li><img src="./images/img1.jpg" alt="Computer" width="360" height="300"></li>
-            <li><img src="./images/img2.jpg" alt="Social network" width="360" height="300"></li>
-            <li><img src="./images/img3.jpg" alt="Mobile phone" width="360" height="300"></li>
-        </ul>
-    </div>
+          <h2 class="what-title">What are we doing</h2>
+          <ul class="list what-list">
+            <li>
+              <img
+                src="./images/img1.jpg"
+                alt="Computer"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img2.jpg"
+                alt="Social network"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img3.jpg"
+                alt="Mobile phone"
+                width="360"
+                height="300"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Section 4 -->
       <section class="our-team">
         <div class="container">
-        <h2 class="title-our-team">Our Team</h2>
-        <ul class="list">
+          <h2 class="title-our-team">Our Team</h2>
+          <ul class="list">
             <li class="card-our-team">
-            <img src="./images/img-mark.jpg" alt="Mark Guerrero" width="264" height="260" class="img-our-team">
-            <h3 class="item-name">Mark Guerrero</h3>
-            <p class="item-profession">Product Designer</p>
+              <img
+                src="./images/img-mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+                class="img-our-team"
+              />
+              <h3 class="item-name">Mark Guerrero</h3>
+              <p class="item-profession">Product Designer</p>
             </li>
             <li class="card-our-team">
-            <img src="./images/img-tom.jpg" alt="Tom Ford" width="264" height="260" class="img-our-team">
-            <h3 class="item-name">Tom Ford</h3>
-            <p class="item-profession">Frontend Developer</p>
+              <img
+                src="./images/img-tom.jpg"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+                class="img-our-team"
+              />
+              <h3 class="item-name">Tom Ford</h3>
+              <p class="item-profession">Frontend Developer</p>
             </li>
             <li class="card-our-team">
-            <img src="./images/img-camila.jpg" alt="Camila Garcia" width="264" height="260" class="img-our-team">
-            <h3 class="item-name">Camila Garcia</h3>
-            <p class="item-profession">Marketing</p>
+              <img
+                src="./images/img-camila.jpg"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+                class="img-our-team"
+              />
+              <h3 class="item-name">Camila Garcia</h3>
+              <p class="item-profession">Marketing</p>
             </li>
             <li class="card-our-team">
-            <img src="./images/img-daniel.jpg" alt="Daniel Wilson" width="264" height="260" class="img-our-team">
-            <h3 class="item-name">Daniel Wilson</h3>
-            <p class="item-profession">UI Designer</p>
+              <img
+                src="./images/img-daniel.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+                class="img-our-team"
+              />
+              <h3 class="item-name">Daniel Wilson</h3>
+              <p class="item-profession">UI Designer</p>
             </li>
-        </ul>
-    </div>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-        <div class="container">
+      <div class="container">
         <!-- Logo -->
         <a href="./index.html" class="logo-footer link">
-            Web            <span class="logo-footer-studio">Studio</span>
+          Web <span class="logo-footer-studio">Studio</span>
         </a>
-       
-        <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-    </div>
-    </footer>
 
-</body>
+        <p class="text-footer">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
