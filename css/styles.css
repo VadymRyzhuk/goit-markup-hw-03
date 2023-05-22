@@ -66,7 +66,7 @@ body {
 .header {
 background-color: var(--white-color);
 padding-top: 25.5px;
-
+border-bottom: 1px solid #e7e9fc
 
 }
 
@@ -74,7 +74,8 @@ padding-top: 25.5px;
                 display: flex;
                 align-items: center;
                 border-bottom: 1px solid #E7E9FC;
-                padding-bottom: 25.5px;
+                /* padding-bottom: 25.5px; */
+                padding: 0 15px 0 15px
 }
 
 .menu-nav {
@@ -89,9 +90,9 @@ padding-top: 25.5px;
     align-items: center;
 }
 
-.logo-padding {
+/* .logo-padding {
     padding-left: 156px;
-}
+} */
 
 .logo-header { font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -286,12 +287,12 @@ padding-top: 25.5px;
     display: flex;
     gap: 24px;
     justify-content: center;
-    width: calc((100%-48px)/3);
 }
 
 .item-what {
-   
+    width: calc((100%-48px)/3);
 }
+
 
 /* --------------------------- OUR TEAM --------------------------- */
 
