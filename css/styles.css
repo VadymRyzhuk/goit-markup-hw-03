@@ -54,8 +54,9 @@ body {
 
   .container {
             width: 1158px;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding: 0 15px;
+            /* padding-right: 15px;
+            padding-left: 15px; */
             margin: 0 auto;
   }
 
@@ -72,7 +73,7 @@ padding-top: 25.5px;
 .header-container {
                 display: flex;
                 align-items: center;
-                border-bottom: solid #E7E9FC;
+                border-bottom: 1px solid #E7E9FC;
                 padding-bottom: 25.5px;
 }
 
@@ -80,6 +81,7 @@ padding-top: 25.5px;
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .navigation {
@@ -96,10 +98,12 @@ padding-top: 25.5px;
     font-size: 18px;
     line-height: 1.17;
     display: flex;
+    margin-right: 76px ;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color)
+    
 }
 
 
@@ -160,13 +164,15 @@ padding-top: 25.5px;
 /* --------------------------- HERO --------------------------- */
 
 .hero {
-    
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-color: var(--navy-blue-color);
 }
 
 .hero-container {
-    background-color: var(--navy-blue-color);
-    padding-top: 188px;
-    padding-bottom: 188px;
+    
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
 }
 
 .title-hero {
@@ -200,7 +206,10 @@ padding-top: 25.5px;
     gap: 10px;
     border-radius: 4px;
     margin-top: 48px;
-    
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .hero-button:hover {background-color: var(--ocean-color);
@@ -214,7 +223,7 @@ padding-top: 25.5px;
 /* --------------------------- ABOUT --------------------------- */
 
 .about { padding-top: 120px;
-        padding-bottom: 60px;
+        padding-bottom: 120px;
 }
 
 
@@ -277,26 +286,36 @@ padding-top: 25.5px;
     display: flex;
     gap: 24px;
     justify-content: center;
-    width: calc((100%-48px)-3);
+    width: calc((100%-48px)/3);
+}
+
+.item-what {
+   
 }
 
 /* --------------------------- OUR TEAM --------------------------- */
 
 .our-team {
-    /* background-color: var(--cloud-color); */
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
-}
-
-.our-team-container {
-    background-color: var(--cloud-color);
+    background-color: var(--cloud-color); 
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+.our-team-container {
+    /* background-color: var(--cloud-color);
+    padding-top: 120px;
+    padding-bottom: 120px; */
+}
+
 .card-our-team {
     background-color: var(--white-color);
+    /* width: calc((100%-72px)/4); */
+    border-radius: 0 0 4px 4px;
     /* border: 1px solid black; */
+}
+
+.name-prof {
+    padding: 32px 16px;
 }
 
 .title-our-team {font-weight: 700;
@@ -313,11 +332,11 @@ padding-top: 25.5px;
     display: flex;
     gap: 24px;
     justify-content: center;
-    width: calc((100%-72px)/4);
+    /* width: calc((100%-72px)/4); */
 }
 
 .img-our-team {
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     
 }
 
@@ -335,10 +354,14 @@ padding-top: 25.5px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
 }
 
 /* --------------------------- PORTFOLIO --------------------------- */
+
+.portfolio {
+  padding: 96px 0 120px 0;
+} 
 
 .portfolio-btn {
     font-family: "Roboto", sans-serif;
@@ -366,11 +389,21 @@ padding-top: 25.5px;
     background-color: var(--ocean-color);
 }
 
-.buttons-list {padding-top: 96px;
-                padding-bottom: 72px;
+.buttons-list {
+                /* padding-top: 96px; */
+                /* padding-bottom: 72px; */
                 display: flex;
                 gap: 24px;
                 justify-content: center;
+                margin-bottom: 72px
+}
+
+.portfolio-btn:hover {
+    border: 1px solid transparent;
+}
+
+.portfolio-btn:focus {
+    border: 1px solid transparent;
 }
 
 .portfolio-list {
@@ -378,13 +411,19 @@ padding-top: 25.5px;
     display: flex;
     flex-wrap: wrap; 
     gap: 48px 24px;
-    width: calc((100%-24px)/3); 
+    /* width: calc((100%-24px)/3);  */
     justify-content: center;
     }
 
 .card-portfolio-list {
     /* border: 1px solid black; */
+    width: calc((100% - 48px) / 3);
+}
 
+.name-filter {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none; 
 }
 
 .border-card-portfolio {
@@ -396,9 +435,7 @@ padding-top: 25.5px;
 
 }
 
-/* .portfolio {
-    background-color: var(--white-color);
-} */
+
 
 .portfolio-name {
     font-weight: 500;
@@ -407,6 +444,7 @@ padding-top: 25.5px;
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
     margin-bottom: 8px;
+    
 }
 
 .portfolio-filter {
@@ -418,15 +456,15 @@ padding-top: 25.5px;
 
 /* --------------------------- FOOTER --------------------------- */
 .footer {
-    /* background-color: var(--navy-blue-color);
-    padding-top: 101.5px;
-    padding-bottom: 100px; */
+    background-color: var(--navy-blue-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
     }
 
 .footer-container {
-    background-color: var(--navy-blue-color);
+    /* background-color: var(--navy-blue-color);
     padding-top: 101.5px;
-    padding-bottom: 100px;
+    padding-bottom: 100px; */
 }
     
 .fotter-padding-zone {padding-left: 156px;
@@ -444,13 +482,14 @@ padding-top: 25.5px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
-    margin-bottom: 17.5px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 
 .logo-footer-studio {
     color: var(--cloud-color);
-    margin-bottom: 17.5px;
+    /* margin-bottom: 17.5px; */
 }
 
 .text-footer {
